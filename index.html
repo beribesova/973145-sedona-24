@@ -87,7 +87,38 @@
                 <h2>Заинтересовались?</h2>
                 <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <button class="hotel-search-button" type="button">Поиск гостиницы в Седоне</button>
-                <!--Здесь будет форма -->
+                <!--форма -->
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="search-form-block">
+                        <label class="search-form-title" for="arrival">Дата заезда:</label>
+                        <input class="search-form-text" type="text" name="arrival" id="arrival"  placeholder="24 апреля 2017" required>
+                        <button class="search-form-calendar" type="button" aria-label="Календарь">
+                            <svg class="calendar-icon" width="21" height="22"></svg>
+                        </button>
+                    </div>
+                    <div class="search-form-block">
+                        <label class="search-form-title" for="departure">Дата выезда:</label>
+                        <input class="search-form-text" type="text" name="departure" id="departure"  placeholder="4 июля 2017" required>
+                        <button class="search-form-calendar" type="button" aria-label="Календарь">
+                            <svg class="calendar-icon" width="21" height="22"></svg>
+                        </button>
+                    </div>
+                    <div class="search-form-block">
+                        <div class="search-form-amount">
+                            <label class="search-form-title" for="adults">Взрослые:</label>
+                            <button class="search-form-button-minus" type="button" aria-label="Уменьшить">-</button>
+                            <input  class="search-form-text" type="text" name="adults" id="adults" placeholder="2" required>
+                            <button class="search-form-button-plus" type="button" aria-label="Увеличить">+</button>
+                        </div>
+                        <div class="search-form-block">
+                            <label class="search-form-title" for="children">Дети:</label>
+                            <button class="search-form-button-minus" type="button" aria-label="Уменьшить">-</button>
+                            <input class="search-form-text" type="text" name="children" id="children"  placeholder="0">
+                            <button class="search-form-button-plus" type="button" aria-label="Увеличить">+</button>
+                        </div>
+                    </div>
+                    <button class="button-submit" type="submit">Найти</button>
+                </form>
             </section>
             <section class="modal modal-map">
                 <h2 class="visually-hidden">Карта Седоны</h2>
