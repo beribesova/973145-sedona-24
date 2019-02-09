@@ -450,19 +450,18 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
 }
 .intro-header{
 	position:  relative;
-
-}
-.mask{
-position: absolute;
-bottom: -2px;
-}
-.welcome{
-	
 	display: flex;
 	flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.mask{
+position: absolute;
+bottom: -2px;
+}
+
+
 .intro{
   margin: 0;
   display: flex;
@@ -619,4 +618,7 @@ width: 50px;
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.site-navigation :nth-child(2){
+margin-right: 240px; 
 }
