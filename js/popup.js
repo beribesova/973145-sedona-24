@@ -13,17 +13,20 @@ var children = popup.querySelector("[name=children]");
 var isStorageSupport = true;
 var storage = "";
 
+
+
+
 try {
   storage = localStorage.getItem("arrival");
 } catch (err) {
   isStorageSupport = false;
 }
 
-
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
 
   popup.classList.toggle("modal");
+  popup.classList.add("modal-show");
   popup.classList.remove("modal-error");
 
   if (storage) {
