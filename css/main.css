@@ -297,6 +297,7 @@ img {
     position: absolute;
     background-color: #ffffff;
     top: 290px;
+    left: 316px;
     /* display: none;*/
 }
 
@@ -359,13 +360,20 @@ img {
     width: 235px;
 }
 
+
 .footer-social ul {
+	float: center;
     list-style: none;
     padding: 0;
 }
 
 .footer-social a {
     background: #81b3d2;
+}
+
+.footer-social ul{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .social-button {
@@ -692,8 +700,11 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
 }
 
 .mask {
-    position: absolute;
-    bottom: -2px;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	/*z-index: 2;
+    margin-bottom: -2px;*/
 }
 
 
@@ -774,6 +785,7 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
     display: -ms-flexbox;
 
     display: flex;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 0;
@@ -790,6 +802,7 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
     display: flex;
 
     width: 400px;
+    box-sizing: border-box;
 
     -webkit-box-pack: center;
 
@@ -868,8 +881,9 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
     display: -webkit-box;
 
     display: -ms-flexbox;
-
+  
     display: flex;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 0;
@@ -881,7 +895,7 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
 
     display: -webkit-box;
 
-
+  box-sizing: border-box;
     display: -ms-flexbox;
 
 
@@ -902,7 +916,7 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
-    padding: 45px 75px 60px 75px;
+    padding: 48px 75px 60px 75px;
 }
 
 .attractions-item h3 {
@@ -910,7 +924,7 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
     line-height: 21px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     padding: 0 50px;
 }
 
@@ -1037,7 +1051,7 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
     fill: #81b3d2;
 }
 
-.catalog-sort-dir .active path {
+.active path {
     fill: #81b3d2;
 }
 
@@ -1409,7 +1423,7 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
 .price-controls input {
     width: 50px;
     margin: 0;
-
+    min-height: 30px;
     color: inherit;
     font: inherit;
 
@@ -1573,4 +1587,40 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
     animation-name: bounce;
     -webkit-animation-duration: 0.6s;
     animation-duration: 0.6s;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+.text-hotel {
+	width: 287px;
+}
+
+.text-hotels {
+	width: 262px;
+}
+
+.text-name {
+	width: 120px;
 }

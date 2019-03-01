@@ -6,12 +6,12 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="container main-header">
-        <a class="main-header-logo">
+        <a class="main-header-logo" aria-label="Логотип Седона">
             <svg viewBox="0 0 138 70" width="138" height="70" xmlns="http://www.w3.org/2000/svg">
                 <title>Логотип Седона</title>
                 <path d="M138 0H0l59.51 65.68c5.22 5.761 13.76 5.761 18.98 0z" fill="#81b3d3" />
@@ -27,10 +27,10 @@
         </a>
         <nav class="main-navigation">
             <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="photo-and-video.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
+                <li><a href="info.html" aria-label="Информация">Информация</a></li>
+                <li><a href="photo-and-video.html" aria-label="Фото и видео">Фото и видео</a></li>
+                <li><a href="map.html" aria-label="Карта штата">Карта штата</a></li>
+                <li><a href="hotels.html" aria-label="Гостиницы">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -73,7 +73,7 @@
                         </g>
                     </svg>
                     <h4>Жилье</h4>
-                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    <p class="text-hotel">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="advantages-item">
                     <svg class="advantages-icon" xmlns="http://www.w3.org/2000/svg" width="74" height="70" viewBox="0 0 74 70">
@@ -86,15 +86,16 @@
                         </g>
                     </svg>
                     <h4>Еда</h4>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="text-hotel">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
+
                 <li class="advantages-item">
                     <svg class="advantages-icon" xmlns="http://www.w3.org/2000/svg" width="64" height="76" viewBox="0 0 64 76">
                         <title>Сувениры</title>
                         <path fill-rule="evenodd" clip-rule="evenodd" fill="#81B3D2" d="M61.097 22.501H36.312C50.125 15.602 51.229 11.25 50.72 8.816c-1.162-3.963-5.692-7.023-10.002-5.407-5.569 2.089-7.137 10.388-8.644 16.387-1.924-6.07-3.784-13.814-8.136-17.737C22.677.921 20.843-.205 18.175.031c-4.026.356-9.802 5.382-7.458 10.981 2.251 5.378 9.687 8.777 14.578 11.489H2.879A2.882 2.882 0 0 0 0 25.37v11.322a2.882 2.882 0 0 0 2.879 2.869h.274V76h57.841V39.561h.103a2.882 2.882 0 0 0 2.88-2.869V25.37a2.882 2.882 0 0 0-2.88-2.869zM42.413 5.944c2.103-.31 4.982 1.299 5.255 3.209.393 2.756-3.4 5.255-5.086 6.421-2.523 1.744-4.928 2.643-7.287 4.055.884-3.69 2.549-13.011 7.118-13.685zm-22.882 9.968c-2.225-1.485-6.544-4.431-6.44-7.771.112-3.595 5.743-6.57 8.814-3.886 3.856 3.371 5.713 11.105 7.119 16.557-3.249-1.539-6.328-2.788-9.493-4.9zm5.972 57.114H6.136V39.561h19.368v33.465zm0-36.502H3.046V25.538h22.457v10.986zm10.157 0v36.503h-7.174V25.538h7.174v10.986zm22.351 36.502H38.644V39.561h19.367v33.465zm2.92-36.502H38.644V25.538h22.287v10.986z" />
                     </svg>
                     <h4>Сувениры</h4>
-                    <p>Не только китайского, но и местного производства!</p>
+                    <p class="text-hotel">Не только китайского, но и местного производства!</p>
                 </li>
             </ul>
             <div class="attractions paragraph">
@@ -107,31 +108,31 @@
             </div>
             <ul class="attractions-list paragraph">
                 <li class="attractions-item">
-                    <h3>Небольшая площадь</h3>
+                    <h3 class="text-name">Небольшая площадь</h3>
                     <span>&ndash; №3 &ndash;</span>
-                    <p>Все достопримечательности находятся очень близко</p>
+                    <p class="text-hotels">Все достопримечательности находятся очень близко</p>
                 </li>
                 <li class="attractions-item">
-                    <h3>Красивая дорога</h3>
+                    <h3 class="text-name">Красивая дорога</h3>
                     <span>&ndash; №4 &ndash;</span>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <p class="text-hotels">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="attractions-item">
-                    <h3>Мало туристов</h3>
+                    <h3 class="text-name">Мало туристов</h3>
                     <span>&ndash; №5 &ndash;</span>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
+                    <p class="text-hotels">Большинство едет в гранд каньон и толпится там</p>
                 </li>
             </ul>
         </section>
         <section class="hotel-search">
             <h2>Заинтересовались?</h2>
             <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button class="button hotel-search-button" type="button">Поиск гостиницы в Седоне</button>
+            <button class="button hotel-search-button" type="button" aria-label="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>
             <!--форма class="visually-hidden" -->
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="search-form-block">
                     <label class="search-form-title" for="arrival">Дата заезда:</label>
-                    <input class="search-form-text" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017" required>
+                    <input class="search-form-text" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
                     <button class="search-form-calendar" type="button" aria-label="Календарь">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                             <title>Календарь</title>
@@ -142,7 +143,7 @@
                 </div>
                 <div class="search-form-block">
                     <label class="search-form-title" for="departure">Дата выезда:</label>
-                    <input class="search-form-text" type="text" name="departure" id="departure" placeholder="4 июля 2017" required>
+                    <input class="search-form-text" type="text" name="departure" id="departure" placeholder="4 июля 2017">
                     <button class="search-form-calendar" type="button" aria-label="Календарь">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                             <title>Календарь</title>
@@ -155,17 +156,17 @@
                     <div class="search-form-amount">
                         <label class="search-form-title" for="adults">Взрослые:</label>
                         <button class="search-form-button-minus" type="button" aria-label="Уменьшить">-</button>
-                        <input class="search-form-number" type="text" name="adults" id="adults" placeholder="2" required>
+                        <input class="search-form-number" type="text" name="adults" id="adults" placeholder="2">
                         <button class="search-form-button-plus" type="button" aria-label="Увеличить">+</button>
                     </div>
                     <div class="search-form-amount">
                         <label class="search-form-title children-title" for="children">Дети:</label>
                         <button class="search-form-button-minus" type="button" aria-label="Уменьшить">-</button>
-                        <input class="search-form-number" type="text" name="children" id="children" placeholder="0" required>
+                        <input class="search-form-number" type="text" name="children" id="children" placeholder="0">
                         <button class="search-form-button-plus" type="button" aria-label="Увеличить">+</button>
                     </div>
                 </div>
-                <button class="button button-submit" type="submit">Найти</button>
+                <button class="button button-submit" type="submit" aria-label="Найти">Найти</button>
             </form>
         </section>
         <section class="map">
@@ -180,17 +181,17 @@
         </div>
         <div class="footer-social">
             <ul class="social-icon-wrapper">
-                <li><a class="social-button" title="Седона в Твиттер" href="#">
+                <li><a class="social-button" title="Седона в Твиттер" aria-label="Седона в Твиттер" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
                             <title>Седона в Твиттер</title>
                             <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
                         </svg>
                     </a></li>
-                <li><a class="social-button" title="Седона на Фейсбук" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                <li><a class="social-button" title="Седона на Фейсбук" aria-label="Седона на Фейсбук" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
                             <title>Седона на Фейсбук</title>
                             <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
                         </svg></a></li>
-                <li><a class="social-button" title="Седона на Ютюб" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+                <li><a class="social-button" title="Седона на Ютюб" aria-label="Седона на Ютюб" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
                             <title>Седона на Ютюб</title>
                             <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
                         </svg>
@@ -207,7 +208,7 @@
             </a>
         </div>
     </footer>
-    <script type="text/javascript" src="js/popup.min.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
 </body>
 
 </html>
