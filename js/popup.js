@@ -1,4 +1,6 @@
 'use strict';
+
+
 var link = document.querySelector(".hotel-search-button");
 
 var popup = document.querySelector(".search-form");
@@ -9,7 +11,7 @@ var arrival = popup.querySelector("[name=arrival]");
 var departure = popup.querySelector("[name=departure]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
-/*var butsub = popup.querySelector(".button-submit");*/
+var container = document.querySelector(".container-form");
 var isStorageSupport = true;
 var storage = "";
 
@@ -41,9 +43,9 @@ link.addEventListener("click", function(evt) {
 popup.addEventListener("submit", function(evt) {
   if (!arrival.value || !departure.value || !adults.value || !children.value) {
     evt.preventDefault();
-    popup.classList.remove("modal-error");
-   // popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
+      container.classList.remove("modal-error");
+      container.offsetWidth = container.offsetWidth;
+      container.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
         localStorage.setItem("arrival", arrival.value);
@@ -51,20 +53,7 @@ popup.addEventListener("submit", function(evt) {
     }
 });
 
-/*
-butsub.addEventListener("click", function(evt) {
-  if (!arrival.value || !departure.value || !adults.value || !children.value) {
-    evt.preventDefault();
-   // popup.offsetWidth = popup.offsetWidth;
-      popup.classList.remove("modal-error");
-      popup.classList.toggle("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("arrival", arrival.value);
-      }
-    }
-});
-*/
+
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
