@@ -280,6 +280,12 @@ img {
     color: #000000;
 }
 
+.container-form {
+	position: absolute;
+	top: 290px;
+	left: 316px;
+}
+
 .search-form {
     width: 568px;
     -webkit-box-sizing: border-box;
@@ -294,11 +300,11 @@ img {
     padding: 55px;
     font-weight: 700;
     color: #000000;
-    position: absolute;
+    
     background-color: #ffffff;
-    top: 290px;
-    left: 316px;
-    /* display: none;*/
+    margin: auto; 
+    
+    /* display: none; */
 }
 
 .search-form-block {
@@ -1613,6 +1619,7 @@ body > * > * > * > *{background-color: rgba(0,255,0,0.5);}
 .modal-error {
   animation: shake 0.6s;
 }
+
 .text-hotel {
 	width: 287px;
 }
